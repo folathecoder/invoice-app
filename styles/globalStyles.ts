@@ -19,18 +19,18 @@ export const GlobalStyles = createGlobalStyle`
         --color-11: hsl(240, 27%, 98%);
         --color-12: hsl(233, 30%, 11%);
 
-
         // FONTS
         --font-pry-100: 'Manrope', sans-serif;
-        --font-weight-100: 200;
-        --font-weight-200: 400; 
-        --font-weight-300: 500; 
-        --font-weight-400: 700; 
+        --font-weight-medium: 500; 
+        --font-weight-bold: 700; 
+
         // WIDTH
         --max-container: 69.375rem;
         --center-container: 0 auto;
+
         //BORDER
         --border-radius: 0.5rem;
+
         //ANIMATION 
         --transition: all 0.5s;
     }
@@ -44,44 +44,50 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
     img {
         display: block;
         max-width: 100%;
         height: auto;
     }
+
     li {
         list-style: none;
     }
+
     //! Remove all animations and transitions for people that prefer not to see them
     @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-    scroll-behavior: auto;
+        html:focus-within {
+        scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
     }
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
+
     /* ::-webkit-scrollbar {
         display: none !important;
     } */
+
     ///////////////////////////////////////////////////////
     //TODO: BASE STYLES
     body {
         font-family: var(--font-pry-100);
         font-weight: var(--font-weight-400);
-        background-color: var(--color-sec-200);
+        background-color: var(--color-03);
         color: var(--color-pry-200);
         position: relative;
         --ms-overflow-style: none
     }
+
     ///////////////////////////////////////////////////////
     //TODO: TYPOGRAPHY
-    a {
+    /* a {
         text-decoration: none;
         color: var(--color-pry-300);
         font-size: 0.8125rem;
@@ -136,11 +142,9 @@ export const GlobalStyles = createGlobalStyle`
             font-size: 1.125rem;
             line-height: 1.5rem;
         }
-    }
+    } */
     
 `;
-
-export const Main = styled.main``;
 
 export const HiddenHeader = styled.h1`
   border: 0 !important;
