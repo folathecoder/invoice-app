@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "public/images/logo.svg";
 import {
   HeaderWrap,
@@ -7,33 +8,31 @@ import {
   LogoWrap,
   Logo,
   ThemeToggle,
+  HeaderMenu,
   UserProfile,
-  UserImage,
 } from "components/sections/header/mobileNav/mobileNavStyles";
+import ThemeToggler from "components/slices/themeToggle/themeToggle";
+import ProfileImage from "components/slices/profile/profileImage";
 
 const MobileNav: NextPage = () => {
   return (
     <HeaderWrap>
       <HeaderInner>
-        <LogoWrap>
-          <Logo>
-            <Image
-              src={}
-              alt="invoice app logo"
-              layout="fill"
-            />
-          </Logo>
-        </LogoWrap>
-        <ThemeToggle>Temp</ThemeToggle>
-        <UserProfile>
-          <UserImage>
-            <Image
-              src="/public/images/image-avatar.jpg"
-              alt="user name"
-              layout="fill"
-            />
-          </UserImage>
-        </UserProfile>
+        <Link href="/">
+          <LogoWrap>
+            <Logo>
+              <Image src={logo} alt="invoice app logo" layout="fill" />
+            </Logo>
+          </LogoWrap>
+        </Link>
+        <HeaderMenu>
+          <ThemeToggle>
+            <ThemeToggler />
+          </ThemeToggle>
+          <UserProfile>
+            <ProfileImage />
+          </UserProfile>
+        </HeaderMenu>
       </HeaderInner>
     </HeaderWrap>
   );
