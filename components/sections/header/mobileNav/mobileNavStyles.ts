@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logoBg from "public/images/logo-bg.svg";
+// import logoBg from "public/images/logo-bg.svg";
 
 export const HeaderWrap = styled.header`
   background-color: var(--color-04);
@@ -20,24 +20,24 @@ export const HeaderInner = styled.div`
   } */
 `;
 
-export const LogoWrap = styled.a`
-  background-color: var(--color-01);
-  width: 4.5rem;
-  height: 4.5rem;
-  display: grid;
-  place-items: center;
-  border-radius: 0rem 1.25rem 1.25rem 0rem;
-  background-image: url(${logoBg});
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-`;
-export const Logo = styled.div`
-  width: 1.75rem;
-  height: 1.75rem;
-  position: relative;
-  object-fit: fill;
-`;
+// export const LogoWrap = styled.a`
+//   background-color: var(--color-01);
+//   width: 4.5rem;
+//   height: 4.5rem;
+//   display: grid;
+//   place-items: center;
+//   border-radius: 0rem 1.25rem 1.25rem 0rem;
+//   background-image: url(${logoBg});
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   cursor: pointer;
+// `;
+// export const Logo = styled.div`
+//   width: 1.75rem;
+//   height: 1.75rem;
+//   position: relative;
+//   object-fit: fill;
+// `;
 
 export const HeaderMenu = styled.div`
   display: flex;
