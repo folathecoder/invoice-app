@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "helpers/mediaQueries";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,14 +17,23 @@ export const LogoWrap = styled.a`
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+
+  @media ${QUERIES.tablet} {
+    width: 6.4375rem;
+    height: 6.4375rem;
+  }
 `;
 export const Logo = styled.div`
   width: 1.75rem;
   height: 1.75rem;
   position: relative;
   object-fit: fill;
-`;
 
+  @media ${QUERIES.tablet} {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+`;
 
 const NavLogo: NextPage = () => {
   return (

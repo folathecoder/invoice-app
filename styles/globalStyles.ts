@@ -36,9 +36,9 @@ export const GlobalStyles = createGlobalStyle`
     }
     ///////////////////////////////////////////////////////
     //TODO: DEFAULT STYLE RESETS
-    /* html {
+    html {
         scrollbar-width: none;
-    } */
+    }
     * {
         margin: 0;
         padding: 0;
@@ -70,9 +70,9 @@ export const GlobalStyles = createGlobalStyle`
         }
     }
 
-    /* ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         display: none !important;
-    } */
+    }
 
     ///////////////////////////////////////////////////////
     //TODO: BASE STYLES

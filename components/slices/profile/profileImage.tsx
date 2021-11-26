@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "helpers/mediaQueries";
 import type { NextPage } from "next";
 import Image from "next/image";
 import userImage from "public/images/image-avatar.jpg";
@@ -9,6 +10,11 @@ export const UserImage = styled.div`
   border-radius: 100%;
   position: relative;
   object-fit: contain;
+
+  @media ${QUERIES.tablet} {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 
   img {
     border-radius: 100%;
