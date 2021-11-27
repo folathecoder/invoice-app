@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
         --color-12: hsl(233, 30%, 11%);
 
         // FONTS
-        --font-pry-100: 'Manrope', sans-serif;
+        --font-100: 'Spartan', sans-serif;
         --font-weight-medium: 500; 
         --font-weight-bold: 700; 
 
@@ -77,39 +77,26 @@ export const GlobalStyles = createGlobalStyle`
     ///////////////////////////////////////////////////////
     //TODO: BASE STYLES
     body {
-        font-family: var(--font-pry-100);
-        font-weight: var(--font-weight-400);
+        font-family: var(--font-100);
+        font-weight: var(--font-weight-medium);
         background-color: var(--color-03);
-        color: var(--color-pry-200);
+        color: var(--color-05);
         position: relative;
         --ms-overflow-style: none
     }
 
     ///////////////////////////////////////////////////////
     //TODO: TYPOGRAPHY
-    /* a {
+
+    a {
         text-decoration: none;
-        color: var(--color-pry-300);
-        font-size: 0.8125rem;
-        line-height: 1.5625rem;
-        letter-spacing: 0.1rem;
-        display: flex;
-        align-items: center;
-        transition: var(--transition);
-        &:hover {
-            transition: var(--transition);
-            color: var(--color-pry-100);
-        }
-        &:active {
-            transition: var(--transition);
-            color: var(--color-pry-100);
-        }
     }
-    p {
-        font-size: 0.9375rem;
-        line-height: 1.5625rem;
-        font-weight: var(--font-weight-100);
-        letter-spacing: 0.05rem;
+    
+    a, p {
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: var(--color-05);
+        font-weight: var(--font-weight-medium);
     }
     h1 {
         font-size: 2.25rem;
@@ -142,7 +129,7 @@ export const GlobalStyles = createGlobalStyle`
             font-size: 1.125rem;
             line-height: 1.5rem;
         }
-    } */
+    }
     
 `;
 
