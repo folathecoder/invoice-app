@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import {
   HeaderWrap,
   HeaderInner,
@@ -10,7 +9,7 @@ import ThemeToggler from "components/slices/themeToggle/themeToggle";
 import ProfileImage from "components/slices/profile/profileImage";
 import NavLogo from "components/slices/navLogo/navLogo";
 
-const DesktopNav: NextPage = () => {
+const DesktopNav = () => {
   return (
     <HeaderWrap>
       <HeaderInner>

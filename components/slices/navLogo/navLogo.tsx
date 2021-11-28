@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { QUERIES } from "helpers/mediaQueries";
-import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "public/images/logo.svg";
@@ -35,7 +34,7 @@ export const Logo = styled.div`
   }
 `;
 
-const NavLogo: NextPage = () => {
+const NavLogo = () => {
   return (
     <Link href="/">
       <LogoWrap>

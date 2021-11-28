@@ -5,7 +5,7 @@ export const InvoiceListWrap = styled.div`
   background-color: var(--color-04);
   margin: 1rem 0rem;
   border-radius: var(--border-radius);
-  box-shadow: 0rem 0rem 0.1rem var(--color-04);
+  box-shadow: 0rem 0rem 0.1rem var(--color-03);
   border: 0.1rem solid transparent;
 
   &:hover {

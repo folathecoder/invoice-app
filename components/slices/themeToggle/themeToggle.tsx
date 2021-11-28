@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useState } from "react";
-import type { NextPage } from "next";
 import Image from "next/image";
 import moonIcon from "public/images/icon-moon.svg";
 import sunIcon from "public/images/icon-sun.svg";
@@ -14,7 +13,7 @@ export const Theme = styled.button`
   object-fit: contain;
   cursor: pointer;
 `; 
-const ThemeToggler: NextPage = () => {
+const ThemeToggler = () => {
   const [theme, setTheme] = useState(false);
 
   const handleClick = () => {

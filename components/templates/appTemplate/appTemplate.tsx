@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import {
   TemplateWrap,
   SideNavWrap,
@@ -6,7 +5,7 @@ import {
 } from "components/templates/appTemplate/appTemplateStyles";
 import DesktopNav from "components/sections/header/desktopNav/desktopNav";
 
-const AppTemplate: NextPage = () => {
+const AppTemplate = () => {
   return (
     <TemplateWrap>
       <SideNavWrap>

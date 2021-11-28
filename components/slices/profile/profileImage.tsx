@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { QUERIES } from "helpers/mediaQueries";
-import type { NextPage } from "next";
 import Image from "next/image";
 import userImage from "public/images/image-avatar.jpg";
 
@@ -21,7 +20,7 @@ export const UserImage = styled.div`
   }
 `;
 
-const ProfileImage: NextPage = () => {
+const ProfileImage = () => {
   return (
     <UserImage>
       <Image src={userImage} alt="user name" layout="fill" />

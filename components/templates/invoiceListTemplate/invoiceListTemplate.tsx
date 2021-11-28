@@ -4,11 +4,13 @@ import {
   InvoiceWrap,
 } from "components/templates/invoiceListTemplate/invoiceListTemplateStyles";
 import InvoiceList from "components/sections/invoiceList/invoiceList";
+import InvoiceMenu from "components/sections/invoiceMenu/invoiceMenu";
 
 const InvoiceListTemplate = () => {
   return (
     <TemplateWrap>
       <TemplateInner>
+        <InvoiceMenu />
         <InvoiceWrap>
           <InvoiceList key="1" paid/>
           <InvoiceList key="2" pending/>

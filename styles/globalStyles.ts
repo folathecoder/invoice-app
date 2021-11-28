@@ -81,7 +81,7 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: var(--font-weight-medium);
         letter-spacing: -0.05rem;
         background-color: var(--color-03);
-        color: var(--color-05);
+        color: var(--color-11);
         position: relative;
         --ms-overflow-style: none
     }
@@ -96,20 +96,18 @@ export const GlobalStyles = createGlobalStyle`
     a, p {
         font-size: 0.75rem;
         line-height: 0.9375rem;
-        color: var(--color-05);
+        color: var(--color-11);
         font-weight: var(--font-weight-medium);
     }
     h1 {
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-        font-weight: var(--font-weight-400);
-        letter-spacing: 0.080625rem;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        font-weight: var(--font-weight-bold);
+        letter-spacing: 0.039375rem;
+
         @media ${QUERIES.tabletMini} {
-            font-size: 3.5rem;
+            font-size: 2rem;
             line-height: 3.625rem;
-        }
-        @media ${QUERIES.tablet} {
-            letter-spacing: 0.125rem;
         }
     }
     h2 {
