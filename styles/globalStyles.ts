@@ -79,6 +79,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         font-family: var(--font-100);
         font-weight: var(--font-weight-medium);
+        letter-spacing: -0.05rem;
         background-color: var(--color-03);
         color: var(--color-05);
         position: relative;

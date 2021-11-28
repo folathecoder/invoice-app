@@ -1,6 +1,6 @@
-import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import type { InvoiceStatusTypes } from "helpers/types/invoiceTypes";
 import {
   InvoiceListWrap,
   InvoiceListInner,
@@ -15,15 +15,16 @@ import {
 import InvoiceStatus from "components/slices/invoiceStatus/invoiceStatus";
 import iconRight from "public/images/icon-arrow-right.svg";
 
-const InvoiceList: NextPage = () => {
+const InvoiceList = ({ paid, pending, draft }: InvoiceStatusTypes) => {
   return (
     <Link href="about">
       <a>
-        <InvoiceListWrap>
+        <InvoiceListWrap pending={pending} paid={paid} draft={draft}>
           <InvoiceListInner>
             <InvNumber>
+              <span>#</span>
               <p>RT3080</p>
-            </InvNumber>
+            </InvNumber> 
             <InvDueDate>
               <p>Due 19 Aug 2021</p>
             </InvDueDate>
@@ -34,7 +35,7 @@ const InvoiceList: NextPage = () => {
               <p>£ 1,800.90</p>
             </InvAmount>
             <InvStatus>
-                <InvoiceStatus />
+              <InvoiceStatus pending={pending} paid={paid} draft={draft} />
             </InvStatus>
             <InvIcon>
               <InvIconWrap>
