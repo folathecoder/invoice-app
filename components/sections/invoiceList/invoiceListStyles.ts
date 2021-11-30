@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { QUERIES } from "helpers/mediaQueries";
 
 export const InvoiceListWrap = styled.div`
-  background-color: var(--color-04);
+  background-color: var(--color-03);
   margin: 1rem 0rem;
   border-radius: var(--border-radius);
   box-shadow: 0rem 0rem 0.1rem var(--color-03);

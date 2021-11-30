@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { QUERIES } from "helpers/mediaQueries";
 
 export const HeaderWrap = styled.header`
-  background-color: var(--color-04);
+  background-color: var(--color-03);
   max-width: 100%;
   min-height: 0rem;
   position: sticky;

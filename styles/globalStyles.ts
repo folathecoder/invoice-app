@@ -80,7 +80,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: var(--font-100);
         font-weight: var(--font-weight-medium);
         letter-spacing: -0.05rem;
-        background-color: var(--color-03);
+        background-color: var(--color-12);
         color: var(--color-11);
         position: relative;
         --ms-overflow-style: none
@@ -111,13 +111,15 @@ export const GlobalStyles = createGlobalStyle`
         }
     }
     h2 {
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-        letter-spacing: 0.1rem;
-        @media ${QUERIES.mobile} {
-            font-size: 3.5rem;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        font-weight: var(--font-weight-bold);
+        letter-spacing: 0.039375rem;
+
+        /* @media ${QUERIES.tabletMini} {
+            font-size: 2rem;
             line-height: 3.625rem;
-        }
+        } */
     }
     
     h3 {

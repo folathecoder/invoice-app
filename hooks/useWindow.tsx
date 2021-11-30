@@ -2,12 +2,7 @@ import { useState, useEffect } from "react";
 
 const useWindow = () => {
   //TODO: Manage screen-size state
-  const [windowSize, setWindowSize] = useState<number | null>(null);
-  const [size, setSize] = useState<number | null>(windowSize);
-
-  useEffect(() => {
-    setWindowSize(window.screen.width);
-  }, []);
+  const [size, setSize] = useState<number>(0);
 
   //TODO: Monitor the screen size to enable image responsiveness
   useEffect(() => {

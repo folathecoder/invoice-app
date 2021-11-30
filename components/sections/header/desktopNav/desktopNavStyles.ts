@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderWrap = styled.header`
-  background-color: var(--color-04);
+  background-color: var(--color-03);
   width: 100%;
   height: 100%;
   border-radius: 0rem 1.25rem 1.25rem 0rem;
