@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
-import { QUERIES } from "helpers/mediaQueries";
+import type { InvoiceStatusTypes } from "helpers/types/invoiceTypes";
 
-export const InvoiceListWrap = styled.div`
+export const InvoiceListWrap = styled.div<InvoiceStatusTypes>`
   background-color: var(--color-03);
   margin: 1rem 0rem;
   border-radius: var(--border-radius);
@@ -10,18 +10,18 @@ export const InvoiceListWrap = styled.div`
 
   &:hover {
     transition: var(--transition);
-    border-color: hsl(34, 100%, 50%);
+    border-color: var(--color-pending);
 
     ${({ paid }) =>
       paid &&
       css`
-        border-color: hsl(160, 67%, 52%);
+        border-color: var(--color-paid);
       `}
 
     ${({ draft }) =>
       draft &&
       css`
-        border-color: hsl(231, 73%, 93%);
+        border-color: var(--color-draft);
       `}
   }
 

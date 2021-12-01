@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import type { ToggleTypes } from "helpers/types/invoiceTypes";
 
 export const InvFilter = styled.div`
   width: 6.375rem;
@@ -25,7 +26,7 @@ export const InvFilterInner = styled.div`
   }
 `;
 
-export const InvFilterIcon = styled.div`
+export const InvFilterIcon = styled.div<ToggleTypes>`
   position: relative;
   width: 0.62875rem;
   height: 0.464375rem;
@@ -37,7 +38,7 @@ export const InvFilterIcon = styled.div`
     `}
 `;
 
-export const InvFilterMenu = styled.div`
+export const InvFilterMenu = styled.div<ToggleTypes>`
   position: absolute;
   margin-top: 11rem;
   margin-left: -4rem;
@@ -77,7 +78,6 @@ export const InvFilterFormField = styled.div`
   }
 
   input {
-    /* display: block; */
     appearance: none;
     -webkit-appearance: none;
     min-width: 1rem;

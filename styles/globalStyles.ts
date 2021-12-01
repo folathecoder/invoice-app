@@ -18,6 +18,9 @@ export const GlobalStyles = createGlobalStyle`
         --color-10: hsl(0, 100%, 80%);
         --color-11: hsl(240, 27%, 98%);
         --color-12: hsl(233, 30%, 11%);
+        --color-pending:hsl(34, 100%, 50%);
+        --color-paid:hsl(160, 67%, 52%);
+        --color-draft:hsl(231, 73%, 93%);
 
         // FONTS
         --font-100: 'Spartan', sans-serif;
