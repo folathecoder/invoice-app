@@ -50,6 +50,23 @@ export const InvoiceListInner = styled.div`
       "C D"
       "E D";
   }
+
+  @media screen and (max-width: 324px) {
+    min-height: 10.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    /* grid-auto-rows: 2rem; */
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "E"
+      "D";
+
+    & > * {
+      min-height: 2rem;
+    }
+  }
 `;
 
 export const InvNumber = styled.div`
@@ -66,6 +83,10 @@ export const InvNumber = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+  @media screen and (max-width: 324px) {
+    align-items: center;
+  }
 `;
 
 export const InvDueDate = styled.div`
@@ -74,6 +95,10 @@ export const InvDueDate = styled.div`
   @media screen and (max-width: 650px) {
     grid-area: C;
     align-items: flex-end;
+  }
+
+  @media screen and (max-width: 324px) {
+    align-items: center;
   }
 `;
 
@@ -84,6 +109,11 @@ export const InvName = styled.div`
     grid-area: B;
     justify-content: flex-end;
     align-items: flex-start;
+  }
+
+  @media screen and (max-width: 324px) {
+    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -109,6 +139,12 @@ export const InvStatus = styled.div`
     grid-area: D;
     justify-content: flex-end;
     align-items: flex-end;
+  }
+
+  @media screen and (max-width: 324px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.5rem 0rem;
   }
 `;
 
